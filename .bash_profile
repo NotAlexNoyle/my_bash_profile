@@ -10,6 +10,10 @@ export THEOS=/Users/NotAlexNoyle/Downloads/IOS/theos
 export tweaks=/Users/NotAlexNoyle/Downloads/Code/JailbreakTweaks
 export TWEAKS=/Users/NotAlexNoyle/Downloads/Code/JailbreakTweaks
 
+# Copy directory and all subdirectories
+alias cpdir='cp -R '
+alias CPDIR='cp -R '
+
 # iOS deviceconsole executer, binary from https://github.com/rpetrich/deviceconsole
 alias deviceconsole='cd /Users/NotAlexNoyle/Downloads/IOS/deviceconsole/ && ./deviceconsole ; cd ~-'
 alias DEVICECONSOLE='cd /Users/NotAlexNoyle/Downloads/IOS/deviceconsole/ && ./deviceconsole ; cd ~-'
