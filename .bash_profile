@@ -10,9 +10,14 @@ export THEOS=/Users/NotAlexNoyle/Downloads/IOS/theos
 export tweaks=/Users/NotAlexNoyle/Downloads/Code/JailbreakTweaks
 export TWEAKS=/Users/NotAlexNoyle/Downloads/Code/JailbreakTweaks
 
+
 # Copy directory and all subdirectories
 alias cpdir='cp -R '
 alias CPDIR='cp -R '
+
+# Copy directory and all subdirectories as root
+alias sudocpdir='sudo cp -R '
+alias SUDOCPDIR='sudp cp -R '
 
 # iOS deviceconsole executer, binary from https://github.com/rpetrich/deviceconsole
 alias deviceconsole='cd /Users/NotAlexNoyle/Downloads/IOS/deviceconsole/ && ./deviceconsole ; cd ~-'
@@ -41,3 +46,6 @@ alias TRASH='rm -rf ~/.Trash/*'
 
 # homebrew clutter
 export PATH="/usr/local/opt/sqlite/bin:$PATH"
+
+# Etcher CLI
+export PATH="$PATH:/opt/etcher-cli"
