@@ -1,3 +1,7 @@
+# Misc. programming working directory
+export code=/Users/NotAlexNoyle/Downloads/Code
+export CODE=/Users/NotAlexNoyle/Downloads/Code
+
 # Normal macOS downloads folder /User/$YOU/Downloads
 export downloads=/Users/NotAlexNoyle/Downloads
 export DOWNLOADS=/Users/NotAlexNoyle/Downloads
