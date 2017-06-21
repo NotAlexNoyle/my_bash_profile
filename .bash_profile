@@ -1,3 +1,14 @@
+# Add sqlite3 to front of path
+export PATH="/usr/local/opt/sqlite/bin:$PATH"
+
+# Add Etcher CLI to back of path
+export PATH="$PATH:/opt/etcher-cli"
+
+
+# Set python version for pyenv for the purpose of messing with the Firefox source code
+export PYENV_VERSION=2.7.11
+
+
 # Misc. programming working directory
 export code=/Users/NotAlexNoyle/Downloads/Code
 export CODE=/Users/NotAlexNoyle/Downloads/Code
@@ -19,10 +30,6 @@ export TWEAKS=/Users/NotAlexNoyle/Downloads/Code/JailbreakTweaks
 alias cpdir='cp -R '
 alias CPDIR='cp -R '
 
-# Copy directory and all subdirectories as root
-alias sudocpdir='sudo cp -R '
-alias SUDOCPDIR='sudp cp -R '
-
 # iOS deviceconsole executer, binary from https://github.com/rpetrich/deviceconsole
 alias deviceconsole='cd /Users/NotAlexNoyle/Downloads/IOS/deviceconsole/ && ./deviceconsole ; cd ~-'
 alias DEVICECONSOLE='cd /Users/NotAlexNoyle/Downloads/IOS/deviceconsole/ && ./deviceconsole ; cd ~-'
@@ -35,9 +42,17 @@ alias IP='~/Downloads/Code/Bash/iplist/iplist.sh'
 alias ipclean='~/Downloads/Code/Bash/iplist/clean.sh'
 alias IPCLEAN='~/Downloads/Code/Bash/iplist/clean.sh'
 
+# Auto perform -a on all ls commands
+alias ls='ls -a'
+alias LS='ls -a'
+
 # theos iOS Jailbreak SDK new instance executer
 alias newtweak='$theos/bin/nic.pl'
 alias newtweak='$theos/bin/nic.pl'
+
+# Copy directory and all subdirectories as root
+alias sudocpdir='sudo cp -R '
+alias SUDOCPDIR='sudp cp -R '
 
 # Open file in textedit (specify file after alias)
 alias textedit='open -e '
@@ -46,10 +61,3 @@ alias TEXTEDIT='open -e '
 # Empty trash quickly --> NOT RECOVERABLE
 alias trash='rm -rf ~/.Trash/*'
 alias TRASH='rm -rf ~/.Trash/*'
-
-
-# homebrew clutter
-export PATH="/usr/local/opt/sqlite/bin:$PATH"
-
-# Etcher CLI
-export PATH="$PATH:/opt/etcher-cli"
