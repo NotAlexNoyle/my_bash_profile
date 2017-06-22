@@ -1,3 +1,6 @@
+# Add dict library to second-to-front of path
+export PATH="/usr/local/sbin:$PATH"
+
 # Add sqlite3 to front of path
 export PATH="/usr/local/opt/sqlite/bin:$PATH"
 
