@@ -1,3 +1,6 @@
+# Path additions
+
+
 # Add dict library to second-to-front of path
 export PATH="/usr/local/sbin:$PATH"
 
@@ -8,8 +11,17 @@ export PATH="/usr/local/opt/sqlite/bin:$PATH"
 export PATH="$PATH:/opt/etcher-cli"
 
 
-# Set python version for pyenv for the purpose of messing with the Firefox source code
+# Mozilla build tools
+
+
+# Set python version for pyenv
 export PYENV_VERSION=2.7.11
+
+# Export mozilla build tools directory to custom folder
+export MOZBUILD_STATE_PATH="/Users/NotAlexNoyle/Downloads/Code/Mozilla/.mozbuild"
+
+
+# cd shortcuts
 
 
 # Misc. programming working directory
@@ -27,6 +39,9 @@ export THEOS=/Users/NotAlexNoyle/Downloads/IOS/theos
 # Development directory for jailbreak tweaks
 export tweaks=/Users/NotAlexNoyle/Downloads/Code/JailbreakTweaks
 export TWEAKS=/Users/NotAlexNoyle/Downloads/Code/JailbreakTweaks
+
+
+# Bash aliases
 
 
 # Copy directory and all subdirectories
