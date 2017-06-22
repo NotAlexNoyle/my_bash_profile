@@ -14,11 +14,14 @@ export PATH="$PATH:/opt/etcher-cli"
 # Mozilla build tools
 
 
-# Set python version for pyenv
+# Export mozilla build tools directory to custom folder
+export MOZBUILD_STATE_PATH="/Users/NotAlexNoyle/Downloads/Code/Mozille/.mozbuild"
+
+# Set python version for pyenv in compliance with Mozilla's bootstrap.py
 export PYENV_VERSION=2.7.11
 
-# Export mozilla build tools directory to custom folder
-export MOZBUILD_STATE_PATH="/Users/NotAlexNoyle/Downloads/Code/Mozilla/.mozbuild"
+# Make Rust compiler visible to Firefox build scripts
+source /Users/NotAlexNoyle/.cargo/env
 
 
 # cd shortcuts
