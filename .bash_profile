@@ -14,9 +14,6 @@ export PATH="$PATH:/opt/etcher-cli"
 # Mozilla build tools
 
 
-# Make llvm visible to Mozilla build system
-export LLVM_CONFIG=/Users/NotAlexNoyle/Downloads/Code/Mozilla/.mozbuild/clang/bin/llvm-config
-
 # Export mozilla build tools directory to custom folder
 export MOZBUILD_STATE_PATH="/Users/NotAlexNoyle/Downloads/Code/Mozilla/.mozbuild"
 
