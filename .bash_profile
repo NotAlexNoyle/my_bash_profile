@@ -17,6 +17,9 @@ export PATH="$PATH:/opt/etcher-cli"
 # Export mozilla build tools directory to custom folder
 export MOZBUILD_STATE_PATH="/Users/NotAlexNoyle/Downloads/Code/Mozilla/.mozbuild"
 
+# Tell mozilla build system where configuration file is
+export MOZCONFIG="/Users/NotAlexNoyle/Downloads/Code/Mozilla/src/mozilla-central/mozconfig"
+
 # Set python version for pyenv in compliance with Mozilla's bootstrap.py
 export PYENV_VERSION=2.7.11
 
