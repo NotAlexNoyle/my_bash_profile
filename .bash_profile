@@ -78,6 +78,10 @@ alias newtweak='$theos/bin/nic.pl'
 alias sudocpdir='sudo cp -R '
 alias SUDOCPDIR='sudp cp -R '
 
+# Prints current time in standard format
+alias t='echo " " && date "+%r" && echo " "'
+alias T='echo " " && date "+%r" && echo " "'
+
 # Open file in textedit (specify file after alias)
 alias textedit='open -e '
 alias TEXTEDIT='open -e '
