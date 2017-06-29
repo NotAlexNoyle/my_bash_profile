@@ -50,6 +50,10 @@ export TWEAKS=/Users/NotAlexNoyle/Downloads/Code/JailbreakTweaks
 # Bash aliases
 
 
+# Bind 'cls' to 'clear'
+alias cls='clear'
+alias CLS='clear'
+
 # Copy directory and all subdirectories
 alias cpdir='cp -R '
 alias CPDIR='cp -R '
