@@ -65,6 +65,10 @@ alias CPDIR='cp -R '
 alias deviceconsole='cd /Users/NotAlexNoyle/Downloads/IOS/deviceconsole/ && ./deviceconsole ; cd ~-'
 alias DEVICECONSOLE='cd /Users/NotAlexNoyle/Downloads/IOS/deviceconsole/ && ./deviceconsole ; cd ~-'
 
+# List git files in repo
+alias gitls='git ls-tree --full-tree -r HEAD'
+alias GITLS='git ls-tree --full-tree -r HEAD'
+
 # iplist main executer from https://github.com/NotAlexNoyle/iplist
 alias ip='~/Downloads/Code/Bash/iplist/iplist.sh'
 alias IP='~/Downloads/Code/Bash/iplist/iplist.sh'
