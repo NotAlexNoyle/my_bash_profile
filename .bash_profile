@@ -1,10 +1,13 @@
 # Path additions
 
 
-# Add dict library to second-to-front of path
+# Add dict library to path
 export PATH="/usr/local/sbin:$PATH"
 
-# Add sqlite3 to front of path
+# Use newest homebrew tools (like git) instead of Apple's
+export PATH="/usr/local/bin:$PATH"
+
+# Add sqlite3 to path
 export PATH="/usr/local/opt/sqlite/bin:$PATH"
 
 # Add Etcher CLI to back of path
@@ -77,6 +80,10 @@ alias LS='ls -a'
 # theos iOS Jailbreak SDK new instance executer
 alias newtweak='$theos/bin/nic.pl'
 alias newtweak='$theos/bin/nic.pl'
+
+# Generate speedtest results with share link every time
+alias speedtest='speedtest --share'
+alias SPEEDTEST='speedtest --share'
 
 # Copy directory and all subdirectories as root
 alias sudocpdir='sudo cp -R '
