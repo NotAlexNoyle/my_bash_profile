@@ -26,9 +26,6 @@ export MOZCONFIG="/Users/NotAlexNoyle/Downloads/Code/Mozilla/src/mozilla-central
 # Set python version for pyenv in compliance with Mozilla's bootstrap.py
 # export PYENV_VERSION=2.7.11
 
-# Make Rust compiler visible to Firefox build scripts
-source /Users/NotAlexNoyle/.cargo/env
-
 
 # cd shortcuts
 
