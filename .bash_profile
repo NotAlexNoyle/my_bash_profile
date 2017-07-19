@@ -7,7 +7,7 @@ export PATH="/usr/local/sbin:$PATH"
 # Use latest versions of git, openssh, openssl, and more
 export PATH="/usr/local/bin:$PATH"
 
-# Use latest  python2 from homebrew
+# Use latest python2 from homebrew
 export PATH="/usr/local/opt/python/libexec/bin:$PATH"
 
 # Add sqlite3 to path
