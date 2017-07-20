@@ -27,7 +27,7 @@ export MOZBUILD_STATE_PATH="/Users/NotAlexNoyle/Downloads/Code/Mozilla/.mozbuild
 export MOZCONFIG="/Users/NotAlexNoyle/Downloads/Code/Mozilla/src/mozilla-central/mozconfig"
 
 # Set python version for pyenv in compliance with Mozilla's bootstrap.py
-# export PYENV_VERSION=2.7.11
+export PYENV_VERSION=2.7.11
 
 
 # cd shortcuts
@@ -104,3 +104,7 @@ alias TEXTEDIT='open -e '
 # Empty trash quickly --> NOT RECOVERABLE
 alias trash='rm -rf ~/.Trash/*'
 alias TRASH='rm -rf ~/.Trash/*'
+
+# Cast units to gunits from homebrew
+alias units='gunits'
+alias UNITS='gunits'
