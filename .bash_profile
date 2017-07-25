@@ -89,15 +89,9 @@ alias LS='ls -a'
 alias newtweak='$theos/bin/nic.pl'
 alias newtweak='$theos/bin/nic.pl'
 
-
-
-# TODO
-
-
-
-# Open file in notepad.app from mac app store (with argument in the middle (abstracted))
-#alias notepad=''
-#alias NOTEPAD=''
+# Open file in notepad.app from Mac App Store
+alias notepad='open -a "/Applications/Notepad.app" '
+alias NOTEPAD='open -a "/Applications/Notepad.app" '
 
 # Generate speedtest results with share link every time
 alias speedtest='speedtest --share'
