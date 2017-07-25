@@ -53,6 +53,10 @@ export TWEAKS=/Users/NotAlexNoyle/Downloads/Code/JailbreakTweaks
 # Bash aliases
 
 
+# Upgrade outdated homebrew casks
+alias caskupgrade='brew cu -a -y --cleanup'
+alias CASKUPGRADE='brew cu -a -y --cleanup'
+
 # Bind 'cls' to 'clear'
 alias cls='clear'
 alias CLS='clear'
@@ -85,6 +89,16 @@ alias LS='ls -a'
 alias newtweak='$theos/bin/nic.pl'
 alias newtweak='$theos/bin/nic.pl'
 
+
+
+# TODO
+
+
+
+# Open file in notepad.app from mac app store (with argument in the middle (abstracted))
+#alias notepad=''
+#alias NOTEPAD=''
+
 # Generate speedtest results with share link every time
 alias speedtest='speedtest --share'
 alias SPEEDTEST='speedtest --share'
@@ -108,3 +122,25 @@ alias TRASH='rm -rf ~/.Trash/*'
 # Cast units to gunits from homebrew
 alias units='gunits'
 alias UNITS='gunits'
+
+
+# Bash functions
+
+
+# Checks if brew cask updates are availible, returns respective messages
+caskchk () {
+
+    caskChkCommand="$(brew cask outdated)"
+    if [[ $caskChkCommand ]]; then
+	echo
+        echo "Outdated:"
+	echo
+	echo "$caskChkCommand"
+	echo
+    else
+	echo
+	echo "Casks are already up-to-date."
+	echo
+    fi
+
+}
