@@ -133,7 +133,7 @@ caskchk () {
     caskChkCommand="$(brew cask outdated)"
     if [[ $caskChkCommand ]]; then
 	echo
-        echo "Outdated:"
+	echo "Outdated:"
 	echo
 	echo "$caskChkCommand"
 	echo
