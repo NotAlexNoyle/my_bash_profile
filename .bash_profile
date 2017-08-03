@@ -93,6 +93,10 @@ alias newtweak='$theos/bin/nic.pl'
 alias notepad='open -a "/Applications/Notepad.app" '
 alias NOTEPAD='open -a "/Applications/Notepad.app" '
 
+# Open file in Adobe Photoshop CC (2017)
+alias photoshop='open -a "Adobe Photoshop CC 2017" '
+alias PHOTOSHOP='open -a "Adobe Photoshop CC 2017" '
+
 # Generate speedtest results with share link every time
 alias speedtest='speedtest --share'
 alias SPEEDTEST='speedtest --share'
