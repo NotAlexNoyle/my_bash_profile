@@ -135,7 +135,7 @@ caskchk() {
 	echo
 	echo "$caskChkCommand"
 	echo
-	else	
+	else
 	echo
 	echo "Casks are already up-to-date."
 	echo
