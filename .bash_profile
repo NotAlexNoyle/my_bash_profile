@@ -126,19 +126,27 @@ alias UNITS='gunits'
 
 
 # Checks if brew cask updates are availible, returns respective messages
-caskchk () {
+caskchk() {
 
-    caskChkCommand="$(brew cask outdated)"
-    if [[ $caskChkCommand ]]; then
+	caskChkCommand="$(brew cask outdated)"
+	if [[ $caskChkCommand ]]; then
 	echo
 	echo "Outdated:"
 	echo
 	echo "$caskChkCommand"
 	echo
-    else
+	else	
 	echo
 	echo "Casks are already up-to-date."
 	echo
-    fi
+	fi
+
+}
+
+# Searches the current directory, with the option to pass in a different directory to search instead
+
+search() {
+
+	# todo
 
 }
