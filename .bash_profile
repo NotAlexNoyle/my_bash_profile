@@ -27,7 +27,7 @@ export MOZBUILD_STATE_PATH="/Users/NotAlexNoyle/Downloads/Code/Mozilla/.mozbuild
 export MOZCONFIG="/Users/NotAlexNoyle/Downloads/Code/Mozilla/src/mozilla-central/mozconfig"
 
 # Set python version for pyenv in compliance with Mozilla's bootstrap.py
-export PYENV_VERSION=2.7.11
+# export PYENV_VERSION=2.7.11
 
 
 # cd shortcuts
@@ -56,6 +56,10 @@ export TWEAKS=/Users/NotAlexNoyle/Downloads/Code/JailbreakTweaks
 # Upgrade outdated homebrew casks
 alias caskupgrade='brew cu -a -y --cleanup'
 alias CASKUPGRADE='brew cu -a -y --cleanup'
+
+# Print 'chmod' number
+alias chstat='stat -f "%0Lp" '
+alias CHSTAT='stat -f "%0Lp" '
 
 # Bind 'cls' to 'clear'
 alias cls='clear'
@@ -101,6 +105,10 @@ alias PHOTOSHOP='open -a "Adobe Photoshop CC 2017" '
 alias speedtest='speedtest --share'
 alias SPEEDTEST='speedtest --share'
 
+# Open file in sublime text
+alias sublime='open -a "Sublime Text" '
+alias SUBLIME='open -a "Sublime Text" '
+
 # Copy directory and all subdirectories as root
 alias sudocpdir='sudo cp -R '
 alias SUDOCPDIR='sudp cp -R '
@@ -143,10 +151,58 @@ caskchk() {
 
 }
 
+CASKCHK() {
+
+	caskChkCommand="$(brew cask outdated)"
+	if [[ $caskChkCommand ]]; then
+	echo
+	echo "Outdated:"
+	echo
+	echo "$caskChkCommand"
+	echo
+	else
+	echo
+	echo "Casks are already up-to-date."
+	echo
+	fi
+
+}
+
+# Creates a remote Github repo (using whiteinge/ok.sh)
+gitinit() {
+
+	if [[ $# -eq 0 ]] ; then
+		echo "Please specify the name of the repo you wish to create."
+	elif [[ $# > 1 ]] ; then	
+		echo "Too many arguments. Please specify ONLY the name of the repo you wish to create. Repository titles with more than one word should be separated by dashes, not by spaces or other special characters."
+	else
+		cd /Users/NotAlexNoyle/Downloads/Code/Bash/ok.sh > /dev/null
+		./ok.sh create_repo $1 2> ~/.create_repo_output > /dev/null
+		
+		repoOutput=$(cat ~/.create_repo_output)
+
+		if [[  $repoOutput == Client* ]] || [[ $repoOutput == Server* ]] ; then
+			echo
+			cat ~/.create_repo_output
+			echo
+			echo Repository Not Created.
+			echo
+		else
+			echo
+			echo "Repository \"https://github.com/NotAlexNoyle/$1\" successfully created."
+			echo
+		fi
+
+		rm -rf ~/.create_repo_output
+		cd - > /dev/null
+	fi
+
+}
+
 # Searches the current directory, with the option to pass in a different directory to search instead
 
 search() {
 
-	# todo
+	#todo
 
 }
