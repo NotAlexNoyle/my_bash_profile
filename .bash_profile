@@ -86,6 +86,10 @@ alias IP='~/Downloads/Code/Bash/iplist/iplist.sh'
 alias ipclean='~/Downloads/Code/Bash/iplist/clean.sh'
 alias IPCLEAN='~/Downloads/Code/Bash/iplist/clean.sh'
 
+# counts lines in a document or file
+alias lc='wc -l < '
+alias LC='wc -l < '
+
 # Auto perform -a on all ls commands
 alias ls='ls -a'
 alias LS='ls -a'
