@@ -145,7 +145,7 @@ alias UNITS='gunits'
 # Checks if brew cask updates are availible, returns respective messages
 caskchk() {
 
-	caskChkCommand="$(brew cask outdated)"
+	caskChkCommand="$(brew outdated --cask)"
 	if [[ $caskChkCommand ]]; then
 	echo
 	echo "Outdated:"
@@ -161,7 +161,7 @@ caskchk() {
 }
 CASKCHK() {
 
-	caskChkCommand="$(brew cask outdated)"
+	caskChkCommand="$(brew outdated --cask)"
 	if [[ $caskChkCommand ]]; then
 	echo
 	echo "Outdated:"
