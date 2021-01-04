@@ -55,8 +55,8 @@ export TWEAKS='/Users/NotAlexNoyle/Downloads/Code/JailbreakTweaks'
 
 
 # Upgrade outdated homebrew casks
-alias caskupgrade='brew cu -a -y --cleanup'
-alias CASKUPGRADE='brew cu -a -y --cleanup'
+alias caskupgrade='brew cu -a -f -y --cleanup'
+alias CASKUPGRADE='brew cu -a -f -y --cleanup'
 
 # Print 'chmod' number
 alias chstat='stat -f "%0Lp" '
