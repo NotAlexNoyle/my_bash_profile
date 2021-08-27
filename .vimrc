@@ -8,6 +8,8 @@ Plugin 'VundleVim/Vundle.vim'
 " Vundle Plugins
 Plugin 'jiangmiao/auto-pairs'
 Plugin 'arrufat/vala.vim'
+Plugin 'Yggdroot/indentLine'
+Plugin 'dense-analysis/ale'
 
 " End Vundle read space (all plugins must be above this)
 call vundle#end()
@@ -16,13 +18,23 @@ filetype plugin indent on
 " Prevents logging of access history
 let g:netrw_dirhistmax=0
 
-" Always use tabs / set tab display spacing to 4 / modernize backspaces / disable line folding / enable line numbers
+" Use tabs except in yaml / set tab display spacing to 4 / modernize backspaces / disable line folding / enable line numbers
+if &filetype == 'yaml'
+      autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab
+	  let g:indentLine_char = '\|'
+else
+      setlocal tabstop=4 
+	  setlocal shiftwidth=4
+endif
 set autoindent
 set backspace=2
 set nofoldenable
 set number
-set shiftwidth=4
-set tabstop=4
+
+" Changes ALE message format and error symbols to look nicer
+let g:ale_echo_msg_format = '[%linter%] %s [%severity%]'
+let g:ale_sign_error='✘'
+let g:ale_sign_error='⚠'
 
 " Makes tab commands more consistent across various file types
 autocmd FileType * set noexpandtab
