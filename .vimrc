@@ -41,8 +41,8 @@ autocmd FileType yaml setlocal tabstop=2 softtabstop=2 shiftwidth=2 expandtab
 
 " Changes ALE message format and error symbols to look nicer
 let g:ale_echo_msg_format = '[%linter%] %severity%: %s'
-let g:ale_sign_error='X'
-let g:ale_sign_error='⚠'
+let g:ale_sign_error='✖'
+let g:ale_sign_warning='⚠'
 
 " Always highlight syntax
 syntax on
