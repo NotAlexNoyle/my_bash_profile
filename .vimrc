@@ -38,9 +38,11 @@ set noexpandtab
 :set mouse=a
 
 " Changes gutter colors to be more readable
-highlight SignColumn ctermbg=black
-highlight ALEErrorSign ctermbg=black ctermfg=red
-highlight ALEWarningSign ctermbg=black ctermfg=yellow
+highlight clear SignColumn
+highlight clear ALEErrorSign
+highlight ALEErrorSign ctermfg=red
+highlight clear ALEWarningSign
+highlight ALEWarningSign ctermfg=yellow
 
 " YAML specific configuration. Sets each tab to take up four columns. Displays
 " tab indentation as two columns behind cursor. When tab is pressed, the line
