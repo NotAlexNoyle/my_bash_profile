@@ -22,6 +22,7 @@ let g:netrw_dirhistmax=0
 setlocal tabstop=4
 " When tab is pressed, the line character will browse 4 columns to the right
 setlocal shiftwidth=4
+
 " When newline is reached, new tab will be created at current scope
 set autoindent
 " Modernize backspaces
@@ -33,16 +34,27 @@ set number
 " Write tabs instead of spaces
 set noexpandtab
 
+" Enables mouse support
+:set mouse=a
+
+" Changes gutter colors to be more readable
+highlight SignColumn ctermbg=black
+highlight ALEErrorSign ctermbg=black ctermfg=red
+highlight ALEWarningSign ctermbg=black ctermfg=yellow
+
 " YAML specific configuration. Sets each tab to take up four columns. Displays
 " tab indentation as two columns behind cursor. When tab is pressed, the line
 " character will browse 2 characters to the right. Writes spaces instead of
 " tabs.
 autocmd FileType yaml setlocal tabstop=2 softtabstop=2 shiftwidth=2 expandtab
 
+" Map F2 key to lnext (go to next error)
+nnoremap <F6> :try<bar>lnext<bar>catch /^Vim\%((\a\+)\)\=:E\%(553\<bar>42\):/<bar>lfirst<bar>endtry<cr>
+
 " Changes ALE message format and error symbols to look nicer
 let g:ale_echo_msg_format = '[%linter%] %severity%: %s'
-let g:ale_sign_error='✖'
-let g:ale_sign_warning='⚠'
+let g:ale_sign_error = '✖'
+let g:ale_sign_warning = '⚠'
 
 " Always highlight syntax
 syntax on
