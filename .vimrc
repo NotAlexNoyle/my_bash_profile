@@ -37,8 +37,8 @@ set noexpandtab
 " Enables mouse support
 :set mouse=a
 
-" Changes gutter colors to be more readable
-highlight clear SignColumn
+" Changes gutter symbol colors to be more readable
+highlight SignColumn ctermbg=black
 highlight clear ALEErrorSign
 highlight ALEErrorSign ctermfg=red
 highlight clear ALEWarningSign
@@ -60,3 +60,6 @@ let g:ale_sign_warning = '⚠'
 
 " Always highlight syntax
 syntax on
+
+" Make gutter transparent
+highlight clear SignColumn
