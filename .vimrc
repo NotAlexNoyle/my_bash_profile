@@ -50,6 +50,9 @@ highlight ALEWarningSign ctermfg=yellow
 " tabs.
 autocmd FileType yaml setlocal tabstop=2 softtabstop=2 shiftwidth=2 expandtab
 
+" See .conf files as yaml
+autocmd BufNewFile,BufRead *.conf set filetype=yaml
+
 " Map F2 key to lnext (go to next error)
 nnoremap <F6> :try<bar>lnext<bar>catch /^Vim\%((\a\+)\)\=:E\%(553\<bar>42\):/<bar>lfirst<bar>endtry<cr>
 
