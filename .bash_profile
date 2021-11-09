@@ -265,6 +265,7 @@ gitrm() {
 # Searches the current directory, with the option to pass in a different directory to search instead
 search() {
 
-	echo "TODO"
+	echo "TODO0"
+	#find "$PWD" -type f | grep 'query'
 
 }
