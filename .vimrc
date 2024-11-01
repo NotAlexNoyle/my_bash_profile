@@ -32,8 +32,6 @@ set backspace=2
 set nofoldenable
 # Show line numbers
 set number
-# Write tabs instead of spaces
-set noexpandtab
 
 # Enables mouse support
 :set mouse=a
